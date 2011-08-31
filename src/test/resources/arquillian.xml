@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquillian xmlns="http://jboss.org/schema/arquillian"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://jboss.org/schema/arquillian
+        http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+
+	<engine>
+		<property name="deploymentExportPath">target/deployments</property>
+	</engine>
+
+	<container qualifier="jboss" default="true">
+		<configuration>
+			<property name="jbossHome">/usr/local/java/jbossas/jboss-6.0.0.Final</property>
+			<!-- Por el momento solo funciona con default hasta que este bug no se cierre
+				https://issues.jboss.org/browse/ARQ-365
+			<property name="profileName">comprobantes-electronicos</property>
+			 -->
+		</configuration>
+	</container>
+
+</arquillian>

@@ -1,0 +1,8 @@
+Generics API
+
+Sample project on using interfaces without generics with JPA
+
+- Build
+  To build this project you need a maven 2.2.x installation or higher.
+  $ mvn install
+
